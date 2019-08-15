@@ -1,6 +1,29 @@
 # flutter_app_google_map
 
-A new Flutter application.
+A new Flutter application .
+
+Show your location on the google map .
+
+Use GeoCode to get address by lat / lon.
+
+#Please Change Google Map API Key .
+
+Android:
+
+app/src/main/AndroidManifestxml 
+
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="your api key" />
+            
+iOS:
+
+Runner/AppDelegate.swift
+
+// Add the following line, with your API key
+GMSServices.provideAPIKey("your api key")
+return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+
 
 ## Getting Started
 
